@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<script>
+	var empNumber;
+var arr=[];
+
+(function(){
+	empNumber=prompt("Enter number of Employees");
+	for(var i=0;i<empNumber;i++){
+		var name=prompt("Enter the name of Employee");
+		var age=prompt("Enter the age of an Employee");
+		var salary=prompt("Enter the salary of an Employee");
+		var DOB=prompt("Enter the DOB in dd/mm/yyyy format");
+		
+		var Employee={
+			"name":name,
+			"age":age,
+			"salary":salary,
+			"DOB":DOB,
+		}
+		arr[i]=Employee;
+	}
+}());
+
+
+(function(){
+for(var i=0;i<empNumber;i++){
+if(arr[i].salary>5000){
+			console.log(arr[i].name);
+		}	
+}
+}());
+
+var agelessthan20 = [];
+var agegreaterthan20 = [];
+	for(var j=0;j<empNumber;j++){
+	if(arr[j].age<20){
+			agelessthan20.push(arr[j].name);
+		}else{
+		agegreaterthan20.push(arr[j].name);
+		}
+	}
+	console.log(agelessthan20); 
+	console.log(agegreaterthan20);
+
+
+var employee_increment =[];
+var salary_increment;
+for(var i=0;i<empNumber;i++){
+	if(arr[i].salary<1000 && arr[i].age>20){
+		salary_increment=arr[i].salary*5;
+		console.log(salary_increment);
+		arr[i].salary=salary_increment;
+		employee_increment.push(arr[i].name);
+	}
+}
+	console.log(employee_increment);
+</script>
+</html>
