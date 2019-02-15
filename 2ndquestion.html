@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+	<title>Question 2</title>
+</head>
+<body>
+	<p style="font-size: 1.4em"><b>Question 2: is palindrome string</b></p>
+	<p id="palindrome" style="font-size: 1.4em"></p>
+	<script>
+		
+					var string=prompt("Enter a string to check for palindrome");
+					var length=string.length;
+					var mid=Math.floor(length/2);
+					for(var i=0;i<mid;i++){
+						if(string[i]==string[length-1-i]){
+							document.getElementById("palindrome").innerHTML="<b>Answer 2: </b>"+string+" <b>is a palindrome</b>."
+						}else{
+							document.getElementById("palindrome").innerHTML="<b>Answer 2: </b>"+string+" <b>is not a palindrome</b>."
+						}
+					}
+		
+	</script>
+</body>
+</html>

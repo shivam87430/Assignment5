@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<h3>Question 1: Calculate Area of Circle<br/></h3>
+	<p id="aoc" style="font-size: 1.5em"></p>
+	
+
+	<script>
+		var radius=prompt("enter the radius to find circle");
+		if(isNaN(radius)){
+			alert("Enter only Integer value");
+			areaofcircle();
+		}
+		areaofcircle=(3.14*radius*radius);
+		document.getElementById("aoc").innerHTML="<b>Area of Cicle is:<b> "+areaofcircle;
+
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+	<title>Question1</title>
+</head>
+<body>
+	<h3>Question 1: Prompt for amount, interest rate and no. of years and calculate simple interest.<br/></h3>
+	<p id="SI" style="font-size: 1.5em"></p>
+
+
+	<script>
+var amount= prompt("Enter your amount");
+var interest_rate=prompt("Enter the interest rate");
+var time=prompt("Enter the time");
+
+var Simple_Interest=(amount*interest_rate*time)/100;
+document.getElementById("SI").innerHTML="<b>Simple Interest is :</b> "+Simple_Interest;
+
+</script>
+</body>
+</html>
